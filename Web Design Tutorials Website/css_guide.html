@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Guide</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<header>
+    <div class="header-img">
+        <img src="CSS.png" alt="CSSLogo">
+    <div class="header-img">
+        
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="design_guide.html">Design Guide</a></li>
+            <li><a href="html_guide.html">HTML Guide</a></li>
+            <li><a href="css_guide.html">CSS Guide</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body class="css-guide">
+    <h1>CSS Guide</h1>
+    
+    <div class="table-contents">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#what-is-css">What is CSS?</a></li>
+            <li><a href="#the-basics">The Basics</a></li>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#contextual-selectors">Contextual Selectors</a></li>
+            <li><a href="#attribute-selectors">Attribute Selectors</a></li>
+            <li><a href="#fonts">Fonts</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#padding-and-margins">Padding and Margins</a></li>
+            <li><a href="#page-layouts">Page Layouts</a></li>
+            <li><a href="#grid-layouts">Grid Layouts</a></li>
+        </ul>
+    </div>
+
+    <div class="intro">
+        <h2 id="what-is-css">What is CSS?</h2>
+        <p>The Cascading Style Sheet (CSS) language is used to define structure and styling rules for web pages. CSS is a modular language, allowing users to independently target specific elements and parts of a web page.</p>
+        <p>Just like HTML (and every language) CSS has different versions, the latest of which is CSS3.</p>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="the-basics">The Basics</h2>
+
+        <p>The basic layout of a CSS document looks like this:</p>  
+
+        <div class="snippet">
+            <code>
+                @charset "an encoding standard"<br>
+                <br>
+                /*<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;multi-line comment <br>
+                */<br>
+                <br>
+                element selector { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;property1: Value1;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;property2: Value2;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;.....<br>
+                }
+            </code>     
+        </div>
+
+        <p>Just like in HTML, it is important to set the character encoding set at the start of the document. We will use UTF-8 here like we did in the HTML Guide.</p>
+        <p>The selector is the element or the group of elements we want to change (h1, div, body, etc...) and the properties and values set what we want to do to the elements. We can change the font, the colour, the position and a lot more.</p>
+        <p>To use our styling sheet, we need to import it into our HTML file as follows: </p> 
+
+        <div class="snippet">
+            <code>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="your_css_document.css"&gt;<br>
+                &lt;/head&gt;<br>
+            </code> 
+        </div>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="colors">Colors</h2>
+
+        <p>There are many ways of working with colors in a CSS document. CSS supports 147 color names, so we can just call them by name (yellow, blue, green, etc.).</p>
+        <p>Other ways include expressing the color in RGB format (255,255,255), HSL format (0,0%,100%), or hexadecimal format (#FFFFFF).</p>
+
+        <div class="snippet">
+            <code>
+                h1 {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+                }<br>
+                <br>
+                div {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: rgb(255,255,255);<br>
+                }<br>
+                <br>
+                p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: hsl(0,0%,100%);<br>
+                }<br>
+                <br>
+                footer {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: #FFFFFF;<br>
+                }<br>
+            </code>
+        </div>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="contextual-selectors">Contextual Selectors</h2>
+
+        <p>In the previous example, we saw that if we want to change the &lt;h1&gt; element color we would just select it and set the color as required, but what if we don't want to change the color of every &lt;h1&gt; element to white?</p>
+        <p>Let's introduce contextual and attribute selector patterns. Using these will allow us to target the specific element or elements we want.</p>
+        <p>First let's see how contextual selectors work. Making use of the hierarchical structure of documents, a contextual selector will allow us to select the child of a parent, or a descendant(s) inside the hierarchical structure. We can also select multiple elements using commas or select "sibling" elements (elements adjacent in hierarchy) with a "+".</p>
+
+        <div class="snippet">
+            <code>
+                /* This is a wild card, it selects any element in the document */<br>
+                * {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                }
+                <br><br><br>
+                /* We have seen this one before, it will target any h1 element in the document */<br>
+                h1 {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>
+                }
+                <br><br><br>
+                /* This will target every h1 and every p element and give them the same atributes */<br>
+                h1, p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>
+                }
+                <br><br><br>
+                /* This will target only the li elements that are nested directly inside a ul element */<br>
+                ul > li {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+                }
+                <br><br><br>
+                /* This will target ol elements directly preceded by a p element */<br>
+                p + ol {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text align: left;<br>
+                }
+                <br><br><br>
+                /* This will select ol elements that are eventually preceded by a p element */<br>
+                p ~ ol {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: rgb(165,80,200);<br>
+                }
+            </code>
+        </div>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="attribute-selectors">Attribute Selectors</h2>
+
+        <p>Another way to select specific elements is to specify attributes that are attached to them. This allows us to pick and choose exactly what elements we want to mess with, and even define our own element groups of sorts, but is not as quick as simply typing "body > p" Two popular ways to do this are with IDs and classes.</p>
+
+        <div class="snippet">
+            <code>
+                /* --- HTML Code --- */
+                <br><br>
+                &lt;h1 id="title"&gt;Web Development Course&lt;/h1&gt;
+                <br><br>
+                &lt;h2 class="topic"&gt;General Style Rules&lt;/h2&gt;
+                <br><br><br><br>
+                /* --- CSS ---*/
+                <br><br>
+                /* Selects only h1 with the id "title" */
+                <br>
+                h1#title {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>
+                }
+                <br><br>
+                /* Selects any element with the id "title" */<br>
+                #title {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>
+                }<br>
+                <br> 
+                /* Selects only h2 elements with the class "topic" */<br>
+                h2.topic {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: pink;<br>
+                }<br>
+                /* Selects any element with the class "topic" */<br>
+                .topic {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: pink;<br>
+                }<br>
+                <br>
+                /* Selects all hypertext elements containing the "href" attribute */<br>
+                a[href] {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: purple;<br>
+                }
+            </code>
+        </div>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="fonts">Fonts</h2>
+
+        <p>When working with stylesheets, we can also work with the appeareance of our fonts, we can change the font itself, the size, the color, and many more.</p>  
+
+        <div class="snippet">
+            <code>
+                h1#title {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-family: 'Arial Black', Gadget, sans-serif;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-size: 5em;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-weight: 300; /*This specifies the stroke thickness of our font*/<br>
+                    }<br>
+            </code>     
+        </div>
+
+        <p>We don't have to use the predefined fonts available, there are also ways to import external fonts. The best format for a font is the Web Open Font Format (WOFF) because it is supported by almost all current browsers.</p>
+        <p>Another good thing about importing fonts is that we don't necessarily have to download it there is also the option to import it from the internet via a URL. </p>
+        <div class="snippet">
+            <code>
+                /*Downloaded font*/<br>
+                @font-face {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-family: : 'Roboto', sans-serif;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;src: url(RobotoRegular.woof) format('woof');<br>
+                    }<br>
+                    <br>
+
+                /*Imported from the web in the html header*/<br>
+                &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br>
+                &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;<br>
+                &lt;link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"&gt;
+            </code>     
+        </div>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="lists">Lists</h2>
+
+        <p>We can also customize the style of lists. The most useful style allows us to choose what kind of list marker shows before each item. Options include circles, squares, letters, imported markers such as images, or nothing at all.</p>
+
+        <div class="snippet">
+            <code>
+                ol {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;list-style-type: upper-roman;<br>
+                }<br>
+                <br>
+                ol {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;list-style-image: url(my_marker.png);<br>
+                }<br>
+            </code>     
+        </div>   
+    </div> 
+
+    <div class="tutorial">
+        <h2 id="padding-and-margins">Padding and Margins</h2>
+
+        <p>Sometimes you may wish to change the space (padding) within an element, or the space around it (margin). This is particularly useful in nested box structures where elements contains other elements, and allows us to properly space our various lists, headers, paragraphs, and more.</p>
+
+        <img class="css-image" src="padding_margins.png" alt="Box Model Image">
+        <p>We can adjust these spaces using the following:</p>
+        <div class="snippet">
+            <code>
+                /* This sets all padding to 25px */
+                <br>
+                p {<br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;padding: 25px;<br>
+                }
+                <br><br><br>
+                /* This sets all padding to different values in the top, right, bottom and left sections */
+                <br>
+                p {<br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;padding: 25px, 10px, 15px, 5px ;<br>
+                }
+                <br><br><br>
+                /* This sets only the top padding to 25px */
+                <br>
+                p {<br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;padding-top: 25px;<br>
+                }
+                <br><br><br>
+                /* This sets all margin to 25px, the same rules apply as in padding */
+                <br>
+                p {
+                    &nbsp;&nbsp;&nbsp;&nbsp;margin: 25px;<br>
+                }
+                <br><br><br> 
+                /*This sets only the top margin to 25px*/
+                <br>
+                p {
+                    &nbsp;&nbsp;&nbsp;&nbsp;margin-top: 25px;<br>
+                }
+            </code>     
+        </div>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="page-layouts">Page Layouts</h2>
+
+        <p>We said previously that some elements follow a nested structure, but we can also set elements to display in specific ways. Below, img elements are set to behave as block containers. </p>
+
+        <div class="snippet">
+            <code>
+                img {display: block;}
+            </code>     
+        </div>   
+
+        <p>We can also choose whether our page has a fixed layout which stays exactly as configured, or a fluid one which adjusts to the size of the window. Generally, fluid layouts are considered to be better practice.</p>   
+        <div class="snippet">
+            <code>
+                /* This style rule sets image widths to 80% of their container, within the minimum and maximum width constraints */
+                <br>
+                image { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;width: 80%;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;min-width: 640px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;max-width: 1500px;<br>
+                }<br>
+            </code>     
+        </div>    
+        <p>We can also float an element so it takes a position to the left or the right of its container's edge.</p>
+        <div class="snippet">
+            <code>
+                img { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;float: left;<br>
+                }<br>
+            </code>     
+        </div>
+    </div>
+          
+    <div class="tutorial">
+        <h2 id="grid-layouts">Grid Layouts</h2>
+
+        <p>Grids are a technique that wasn't born in the web design but is widely applied for it. Usually web designers buy layouts and use frameworks such as Bootstrap, Skeleton or Neat to agilize work, but although tedious and time consuming, it can be done by ourselves.</p>
+        <p>To create a grid, you can first display it using display: grid; inside the element. Now, you can proceed to set the size of the columns and the rows:</p>
+
+        <div class="snippet">
+            <code>
+                /* This style rule creates a 2x3 grid with specified column and row areas*/<br>
+                div#outer {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 250px 100px; /*This creates two columns*/<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-rows: 50px 100px 150px; /*This creates three rows*/<br>
+                }<br>
+               <br>
+               <br>
+               /* We can also use fractional units to make the grid fluid */<br>
+               div#outer {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 4fr 1fr; /*This creates two columns*/<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-rows: 4fr 2fr 1fr; /*This creates three rows*/<br>
+           }<br>
+
+            </code>     
+        </div>
+    </div>
+</body>
+
+<footer class="footer">
+    <ul>
+        <li>Bryce - Home Page</li>
+        <li>Eli - CSS Styling and HTML Assistance</li>
+        <li>Emily - Image Creation and HTML Assistance</li>
+        <li>Jack - HTML Guide</li>
+        <li>Jaly - CSS Guide</li>
+        <li>Miranda - Design Guide</li>
+    </ul>
+</footer>
+
+</html>
+

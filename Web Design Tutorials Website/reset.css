@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*
+	WEBD 1000: Website Development
+	Final Project
+	Author: 
+	Date: Nov 21, 2023
+	Filename: styling.css
+*/
+
+footer, header, main, nav, section {
+   display: block;
+}
+
+
+/* Typographic Styles */
+body, div, dl, dt, dd, em, footer, h1, h2, h3, h4, h5, h6, header, html, img, li, main, nav, ol, p, section, ul {
+   background: transparent;
+   font-size: 100%;
+   margin: 0;
+   padding: 0;
+   vertical-align: baseline;
+   box-sizing: border-box;
+}
+
+body {
+   line-height: 1.25;
+}
