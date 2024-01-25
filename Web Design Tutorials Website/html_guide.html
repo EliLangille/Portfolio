@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Guide</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<header>
+    <div class="header-img">
+        <img src="HTML.png" alt="HTMLLogo">
+    </div>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="design_guide.html">Design Guide</a></li>
+            <li><a href="html_guide.html">HTML Guide</a></li>
+            <li><a href="css_guide.html">CSS Guide</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body class="html-guide">
+    <h1>HTML Guide</h1>
+
+    <div class="table-contents">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#what-is-html">What is HTML?</a></li>
+            <li><a href="#main">Main</a></li>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#paragraphs">Paragraphs</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#images">Images</a></li>
+        </ul>
+    </div>
+
+    <div class="intro">
+        <h2 id="what-is-html">What is HTML?</h2>
+        <p>HyperText Markup Language (HTML) is the standard markup language used to create websites. It provides the basic structure and contents of a webpage using different tags.</p>
+        <p>The latest version, HTML5, allows for greater flexibility in the creation of different parts of a website, such as articles, navigation bars, headers, footers, and more.</p>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="main">Main</h2>
+
+        <p>The Main element represents the main content of the document. It should contain the central topic or functionality of the page.</p>
+
+        <div class="snippet">
+            <code>
+                &lt;main&gt;<br>
+                &emsp;&lt;h1&gt;Main Content&lt;/h1&gt;<br>
+                &emsp;&lt;p&gt;This is the main section of your webpage.&lt;/p&gt;<br>
+                &lt;/main&gt;
+            </code>
+        </div>
+
+        <p>Use the Main tag to encapsulate the primary content of your page, helping assistive technologies and search engines understand the main purpose of your document.</p>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="headings">Headings</h2>
+
+        <p>Headings are used to define the structure of a webpage. HTML provides six levels of headings, from &lt;h1&gt; to &lt;h6&gt;. The &lt;h1&gt; tag represents the highest level of heading, while &lt;h6&gt; represents the lowest.</p>
+
+        <div class="snippet">
+            <code>
+                &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+                &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+                &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+                &lt;h5&gt;Heading 5&lt;/h5&gt;<br>
+                &lt;h6&gt;Heading 6&lt;/h6&gt;
+            </code>
+        </div>
+
+        <p>Use these tags to organize your content and create a hierarchy within your webpage.</p>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="paragraphs">Paragraphs</h2>
+
+        <p>Paragraphs are used to structure and separate blocks of text. The &lt;p&gt; tag is used to define paragraphs in HTML.</p>
+
+        <div class="snippet">
+            <code>
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                &lt;p&gt;Another paragraph.&lt;/p&gt;
+            </code>
+        </div>
+
+        <p>Use the &lt;p&gt; tag to enclose your text and create distinct sections within your content.</p>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="links">Links</h2>
+
+        <p>Links are used to navigate between web pages. The &lt;a&gt; (anchor) tag is used for creating links in HTML.</p>
+
+        <div class="snippet">
+            <code>
+                &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;<br>
+                &lt;a href="page2.html"&gt;Go to Page 2&lt;/a&gt;
+            </code>
+        </div>
+
+        <p>Replace the href attribute with the URL of the page you want to link to. Links can also be used to navigate within the same page or to external websites.</p>
+    </div>
+
+    <div class="tutorial">
+        <h2 id="images">Images</h2>
+
+        <p>Images can be included in your webpage using the &lt;img&gt; tag. This tag requires the src attribute, which specifies the path to the image file, and the alt attribute, which provides alternative text for accessibility.</p>
+
+        <div class="snippet">
+            <code>
+                &lt;img src="image.jpg" alt="Description of the image"&gt;
+            </code>
+        </div>
+
+        <p>Ensure to provide a descriptive alt text for your images to make your content accessible to all users, including those with visual impairments.</p>
+    </div>
+</body>
+
+<footer class="footer">
+    <ul>
+        <li>Bryce - Home Page</li>
+        <li>Eli - CSS Styling and HTML Assistance</li>
+        <li>Emily - Image Creation and HTML Assistance</li>
+        <li>Jack - HTML Guide</li>
+        <li>Jaly - CSS Guide</li>
+        <li>Miranda - Design Guide</li>
+    </ul>
+</footer>
+
+</html>
