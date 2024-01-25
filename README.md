@@ -5,8 +5,7 @@ Languages I am skilled in:
 - Python
 - HTML
 - CSS
-- SQL
-  
+- SQL 
 
 Languages that I am learning:
 - Java
@@ -15,7 +14,6 @@ Languages that I am learning:
 - SASS
 - Rust
 - Go
-  
 
 Projects:
 - Slime Slicer: A PyGame created during my first semester at NSCC
