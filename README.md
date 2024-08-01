@@ -1,20 +1,36 @@
 # Portfolio
-A portfolio to showcase the various programming work that I have done and that I am working on.
+A portfolio to showcase the various programming skills, goals, and projects that I have. 
 
-Languages I am skilled in:
-- Python
-- HTML
-- CSS
-- SQL 
+## Objective
+Short term: Obtain a full-time role involving DevOps or software development work, with room to grow in either of those areas.
+Long term: Become a DevOps Engineer or Back-End Developer.
 
-Languages that I am learning:
-- Java
-- C
-- JavaScript
-- SASS
-- Rust
-- Go
+## Skills
+This section highlights some of the core languages and tools that I'm working with.
 
-Projects:
-- Slime Slicer: A PyGame created during my first semester at NSCC
-- Web Design Tutorials Website: A local website created as a group project during my first semester at NSCC
+Skilled in:
+- Python, Java
+- GenAI tools
+- Git
+- Microsoft Office
+- Windows, Mac, Linux
+
+Familiar with:
+- Web Development (HTML, CSS, JS, REST APIs)
+- Jira, Confluence
+- C++, shell scripting, SQL
+
+Learning:
+- GitHub Actions, Jenkins, and other DevOps tools
+- Cloud technologies
+- Containerization
+- Go, Rust
+
+## Projects
+Finished:
+- Slime Slicer: A small platform-style PyGame
+- Web Design Tutorials Website: A group project designed to introduce users to Web Design
+
+Working on:
+- Personal Website: A containerized website about me and my programming work
+- Blackjack Game: A blackjack game with flexible rulesets and lifelike deck and card-counting mechanics
