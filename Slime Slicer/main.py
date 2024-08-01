@@ -1,6 +1,3 @@
-# PROG 1700 - NSCC
-# Final Project - PyGame
-
 # Slime Slicer
 # Created by Eli Langille
 # Dec 8, 2023
@@ -262,7 +259,7 @@ def handle_slimes(slimes, kills, last_slime, current_time, sprite_status):
     :return: Returns last_slime, either as given or a newly updated one if a slime was spawned
     """
     # Set slime speed between min and max based on kills
-    slime_speed = SLIME_MIN_SPEED + kills / SLIME_SPEED_MODIFIER
+    slime_speed = SLIME_MIN_SPEED + kills * SLIME_SPEED_MODIFIER
     if slime_speed > SLIME_MAX_SPEED:
         slime_speed = SLIME_MAX_SPEED
 
@@ -272,7 +269,7 @@ def handle_slimes(slimes, kills, last_slime, current_time, sprite_status):
         slime_delay = SLIME_DELAY_MIN
 
     # Set slime spawn cap based on kills
-    slime_cap = SLIME_CAP_MIN + kills // SLIME_CAP_MODIFIER
+    slime_cap = (SLIME_CAP_MIN + kills * SLIME_CAP_MODIFIER) // 1
     if slime_cap > SLIME_CAP_MAX:
         slime_cap = SLIME_CAP_MAX
 
@@ -509,20 +506,20 @@ if __name__ == "__main__":
 
     # Speeds
     SPRITE_SPEED = 6
-    SLIME_MIN_SPEED = 3
-    SLIME_MAX_SPEED = 10
+    SLIME_MIN_SPEED = 4
+    SLIME_MAX_SPEED = 8.5
 
     # Spawn and update constraints
     SPRITE_FRAME_DELAY = 60  # milliseconds
-    SLIME_DELAY_MAX = 1400  # milliseconds
-    SLIME_DELAY_MIN = 200  # milliseconds
+    SLIME_DELAY_MAX = 1200  # milliseconds
+    SLIME_DELAY_MIN = 225  # milliseconds
     SLIME_CAP_MIN = 1
     SLIME_CAP_MAX = 10
 
     # Slime stat multipliers
-    SLIME_SPEED_MODIFIER = 7
-    SLIME_DELAY_MODIFIER = 20
-    SLIME_CAP_MODIFIER = 10
+    SLIME_SPEED_MODIFIER = 0.125
+    SLIME_DELAY_MODIFIER = 25
+    SLIME_CAP_MODIFIER = 0.1
 
     # Frame counts for each animation png sheet
     ATTACK_FRAME_COUNT = 15  # milliseconds

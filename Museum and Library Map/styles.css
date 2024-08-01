@@ -1,0 +1,16 @@
+h1 {
+    color: #6EBBFF;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+body {
+    background-color: #21272F;
+}
+
+#searchBar {
+    width: 100%;       /* Responsive width based on viewport width */
+    max-width: 600px;  /* Limits growth on very large screens */
+    margin: 0 auto;
+}

@@ -28,9 +28,12 @@ Learning:
 
 ## Projects
 Finished:
-- Slime Slicer: A small platform-style PyGame
-- Web Design Tutorials Website: A group project designed to introduce users to Web Design
+- Battle Game: A text-based Java game made to practice OOP principles.
+- C Programs: Various programs written during a C programming course.
+- Museum and Library Map: A Google Map-based page to find museums and libraries in Nova Scotia.
+- Slime Slicer: A platform-style PyGame.
+- Web Design Tutorials Website: A group project designed to introduce users to Web Design.
 
 Working on:
-- Personal Website: A containerized website about me and my programming work
-- Blackjack Game: A blackjack game with flexible rulesets and lifelike deck and card-counting mechanics
+- Personal Website: A containerized website about me and my programming work.
+- Blackjack Game: A blackjack game with flexible rulesets and lifelike deck and card-counting mechanics.
