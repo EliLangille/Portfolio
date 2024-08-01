@@ -3,6 +3,7 @@ A portfolio to showcase the various programming skills, goals, and projects that
 
 ## Objective
 Short term: Obtain a full-time role involving DevOps or software development work, with room to grow in either of those areas.
+
 Long term: Become a DevOps Engineer or Back-End Developer.
 
 ## Skills
