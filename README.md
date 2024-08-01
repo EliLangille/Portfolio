@@ -17,8 +17,8 @@ Skilled in:
 
 Familiar with:
 - Web Development (HTML, CSS, JS, REST APIs)
-- Jira, Confluence
 - C++, shell scripting, SQL
+- Jira, Confluence
 
 Learning:
 - GitHub Actions, Jenkins, and other DevOps tools
