@@ -30,7 +30,8 @@ Learning:
 ## Projects
 Finished:
 - Battle Game: A text-based Java game made to practice OOP principles.
-- C Programs: Various programs written during a C programming course.
+- C Misc: Various programs written during a C programming course.
+- Linux Misc: Code scraps from Linux work and class assignments.
 - Museum and Library Map: A Google Map-based page to find museums and libraries in Nova Scotia.
 - Slime Slicer: A platform-style PyGame.
 - Web Design Tutorials Website: A group project designed to introduce users to Web Design.
