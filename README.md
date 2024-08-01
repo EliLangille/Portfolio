@@ -1,5 +1,5 @@
 # Portfolio
-A portfolio to showcase the various programming skills, goals, and projects that I have. 
+A portfolio to showcase my various programming skills, goals, and projects. 
 
 ## Objective
 Short term: Obtain a full-time role involving DevOps or software development work, with room to grow in either of those areas.
