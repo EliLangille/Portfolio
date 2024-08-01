@@ -6,7 +6,7 @@ Short term: Obtain a full-time role involving DevOps or software development wor
 Long term: Become a DevOps Engineer or Back-End Developer.
 
 ## Skills
-This section highlights some of the core languages and tools that I'm working with.
+This section highlights some of the core languages and tools that I'm working with. Note that this is not an exhaustive list, just the basics.
 
 Skilled in:
 - Python, Java
