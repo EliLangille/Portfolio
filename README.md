@@ -33,6 +33,14 @@ Operating Systems:
 - Mac
 - Windows
 
+## Learning
+Some new things I'm working on learning:
+- Cloud technologies
+- Containerization
+- DevOps tools: GitHub Actions, Jenkins, etc.
+- Go
+- Rust
+
 ## Projects
 Finished:
 - Battle Game: A text-based Java game made to practice OOP principles.
@@ -45,11 +53,3 @@ Finished:
 In progress:
 - Personal Website: A custom website about me and my programming work, also a chance to play with containers.
 - Text-Based Adventure Game: A text-based game with a branching story and gameplay inspired by Zork and other classics.
-
-## Learning
-Some new things I'm working on learning:
-- Cloud technologies
-- Containerization
-- DevOps tools: GitHub Actions, Jenkins, etc.
-- Go
-- Rust
