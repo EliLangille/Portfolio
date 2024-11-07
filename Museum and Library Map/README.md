@@ -4,12 +4,7 @@ When the user starts a query, their entry is live-checked for relevant results w
 
 Choosing a location from the Google Maps API query will zoom and center on this location. The map also allows the user to freely move around, zoom in/out, and go to Street View.
 
----
-
 APIs used:
-
 Data NS Libraries: https://data.novascotia.ca/Communities-and-Social-Services/Nova-Scotia-Public-Library-Branches-and-Contact-In/ye3k-afyv
-
 Data NS Museums: https://data.novascotia.ca/Arts-Culture-and-History/Nova-Scotia-Museum-Locations-Map/57fm-m8a8
-
 Google Maps API: https://maps.googleapis.com

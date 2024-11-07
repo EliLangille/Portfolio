@@ -1,3 +1,21 @@
+// Function to prompt user for Google Maps API Key
+function promptForApiKey() {
+    let apiKey;
+    while (!apiKey) {
+        apiKey = prompt("Please enter your Google Maps API Key: ");
+        if (!apiKey) {
+            alert("You must enter a Google Maps API Key to use this site.");
+        }
+    }
+    return apiKey;
+}
+
+// Prompt user for Google Maps API Key
+const apiKey = promptForApiKey();
+const script = document.createElement('script');
+script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&callback=initializeMap`;
+document.body.appendChild(script);
+
 // Initialize variables
 var locations = [], map;
 
@@ -75,6 +93,7 @@ function setMarkers(iconURL, type) {
 }
 
 // Initialize the map and its autocompleter
+    // Will be called once Google Maps API is loaded (see line 4 callback)
 function initializeMap() {
     // Load the map graphic
     var mapProperties = {
@@ -101,16 +120,19 @@ function initializeMap() {
 
         // Make sure the chosen place has valid info
         if (!place.geometry) {
-            window.alert("No details available for input: '" + place.name + "'");;
+            window.alert("No details available for input: '" + place.name + "'");
         } else {
-            // Zoom in on center of chosen location if info valid
-            map.setCenter(place.geometry.location);
-            map.setZoom(13);
+            // If the place has a viewport, use it to set the map bounds
+            if (place.geometry.viewport) {
+                map.fitBounds(place.geometry.viewport);
+            } else {
+                // Otherwise, set the map center to the chosen place with static zoom
+                map.setCenter(place.geometry.location);
+                map.setZoom(10);
+            }
         }
     });
-}
 
-$(document).ready(function() {
     // Get and set Museum markers
     setLocations(
         "https://data.novascotia.ca/resource/f84a-3hfv.json",
@@ -124,4 +146,4 @@ $(document).ready(function() {
         'library_icon.png',
         'library'
     );
-});
+}
