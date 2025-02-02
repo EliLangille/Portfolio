@@ -1,12 +1,10 @@
 # Portfolio
-A portfolio to showcase my various programming skills, goals, projects, and things I'm learning.
+A portfolio to showcase my various programming skills, goals, projects, and the things I'm learning.
 
 Note: The below lists are alphabetized, not ranked in any way.
 
 ## Objective
-Short term: Obtain a full-time role involving DevOps and/or software development work, with room to grow in either of those areas.
-
-Long term: Become a DevOps Engineer or Back-End Developer.
+Obtain a full-time role involving programming work, ideally involving Python, DevOps, data operations, and/or back-end development.
 
 ## Skills
 Programming Languages:
@@ -20,7 +18,7 @@ Programming Languages:
 
 Tools:
 - Confluence
-- Databases (e.g. PostgreSQL)
+- Databases
 - Docker
 - GenAI
 - Git
