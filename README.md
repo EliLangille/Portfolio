@@ -1,7 +1,7 @@
 # Portfolio
 A portfolio to showcase my various programming skills, goals, projects, and the things I'm learning.
 
-Note: The below lists are alphabetized, not ranked in any way.
+Note: The below lists are a general overview and may not be fully comprehensive.
 
 ## Objective
 Obtain a full-time role involving programming work, ideally involving Python, DevOps, data operations, and/or back-end development.
@@ -42,8 +42,8 @@ Some new things I'm learning:
 
 ## Projects
 Active:
-- Recipe App (Name TBD): A Python and SQLite GUI app that interacts with the Spoonacular API to find recipes with specific ingredients. Includes features for saving current ingredients and favourite recipes.
 - Portfolio Website: A custom website about me and my programming work, as well as a chance to experiment with containers.
+- Recipe App (Name TBD): A Python and SQLite GUI app that interacts with the Spoonacular API to find recipes with specific ingredients. Includes features for saving current ingredients and favourite recipes.
 
 Finished:
 - Battle Game: A text-based Java game made to practice OOP principles.
