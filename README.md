@@ -1,7 +1,7 @@
 # Portfolio
-A portfolio to showcase my various programming skills, goals, projects, and the things I'm learning.
+A portfolio to provide a basic overview my various programming skills, goals, projects, and the things I'm learning.
 
-Note: The below lists are a general overview and may not be fully comprehensive.
+Note: Updates will be made to this portfolio when projects are completed or other significant changes are required.
 
 ## Objective
 Obtain a full-time role involving programming work, ideally involving Python, DevOps, data operations, and/or back-end development.
