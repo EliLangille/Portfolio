@@ -1,49 +1,20 @@
 # Portfolio
-A portfolio to provide a basic overview my various programming skills, goals, projects, and the things I'm learning.
-
-Note: Updates will be made to this portfolio when projects are completed or other significant changes are required.
+A portfolio to provide an overview of my various certifications, learnings, and projects for prospective employers.
 
 ## Objective
-Obtain a full-time role involving programming work, ideally involving Python, DevOps, data operations, and/or back-end development.
+Obtain a full-time programming job, ideally involving Python, DevOps, data operations, and/or back-end development.
 
-## Skills
-Programming Languages:
-- C/C++/C#
-- CSS
-- HTML
-- Java
-- JavaScript
-- Python
-- SQL (MySQL, SQLite, PostgreSQL)
-
-Tools:
-- Confluence
-- Databases
-- Docker
-- GenAI
-- Git
-- GitHub
-- Jira
-- Microsoft Office
-- REST APIs
-
-Operating Systems:
-- Linux
-- Mac
-- Windows
-
-## Learning
-Some new things I'm learning:
-- Cloud technologies
-- Containerization
-- DevOps tools: GitHub Actions, Jenkins, etc.
-- Go
-- Rust
+## Certifications and Learning
+Ongoing:
+- [PCEP: Certified Entry-Level Python Programmer](https://pythoninstitute.org/pcep)
+- [Harvard's CS50](https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science)
+- [AWS Developer](https://aws.amazon.com/certification/certified-developer-associate/)
+- [Learning Go](https://go.dev/learn/)
 
 ## Projects
-Active:
-- Portfolio Website: A custom website about me and my programming work, as well as a chance to experiment with containers.
-- Recipe App (Name TBD): A Python and SQLite GUI app that interacts with the Spoonacular API to find recipes with specific ingredients. Includes features for saving current ingredients and favourite recipes.
+Active: 
+- ReciPython: A Python and SQLite GUI app that interacts with the Spoonacular API to find and save recipes using various search parameters and filters.
+- TBD: Python project for experimenting with the pandas library.
 
 Finished:
 - Battle Game: A text-based Java game made to practice OOP principles.
