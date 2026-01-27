@@ -1,1 +1,0 @@
-generic_setup.sh: An idempotent BASH script created for coursework to handle user, group, and web server setup.
