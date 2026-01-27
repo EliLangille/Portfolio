@@ -8,6 +8,7 @@ Ongoing:
 - [CompTIA A+](https://www.comptia.org/en-us/certifications/a/)
 
 ## Projects
+Active:
 - Relocation Planner: A web app that pulls from housing, job, and livability ranking websites to allow users to find an ideal place to live and work for their desired location, career, and lifestyle.
 
 Finished:
